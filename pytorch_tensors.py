@@ -4,9 +4,7 @@ import torch
 
 
 def describe(x) -> None:
-    logger.info("Type: {}".format(x.type()))
-    logger.info("Shape: {}".format(x.shape))
-    logger.info("Values: \n{}".format(x))
+    logger.info("{} [{}]\n{}".format(x.type(), x.shape, x))
 
 
 def make_tensor() -> None:
